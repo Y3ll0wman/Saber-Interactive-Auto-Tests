@@ -1,6 +1,6 @@
 import allure
 
-from selene import browser, be, have, by
+from selene import browser, be, have
 
 
 class MainPage:
@@ -8,6 +8,7 @@ class MainPage:
     main_menu_games = browser.element('//a[.="GAMES"]')
     main_menu_studios = browser.element('//a[.="STUDIOS"]')
     main_menu_news = browser.element('//a[.="NEWS"]')
+    main_menu_careers = browser.element('//a[.="CAREERS"]')
     about_section = browser.element('#about')
     game_project_space_marine_2 = browser.element('//a[@href="https://www.focus-entmt.com/en/games/warhammer-40000-space-marine-2"]')
     studio_3d_realms = browser.element('//a[@href="https://3drealms.com/"]')
@@ -66,3 +67,7 @@ class MainPage:
     def go_to_news_section(self):
         with allure.step('Нажать на "News"'):
             self.main_menu_news.should(be.clickable).click()
+
+    def go_to_careers_section(self):
+        with allure.step('Перейти в раздел "Careers"'):
+            self.main_menu_careers.should(be.clickable).click()
