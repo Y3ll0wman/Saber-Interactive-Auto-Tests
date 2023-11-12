@@ -37,7 +37,7 @@ class MainPage:
             browser.switch_to_tab(1)
             title = str(browser.driver.title)
             assert title == 'Space Marine 2 - Focus Entertainment', f'Заголовок страницы: {title}'
-        with ((allure.step('Проверить, что URL страницы: '
-                         'https://www.focus-entmt.com/en/games/warhammer-40000-space-marine-2'))):
+        with allure.step('Проверить, что URL страницы: '
+                         'https://www.focus-entmt.com/en/games/warhammer-40000-space-marine-2'):
             current_url = browser.driver.current_url
             assert current_url == 'https://www.focus-entmt.com/en/games/warhammer-40000-space-marine-2', f"Текущий url страницы: {current_url}"
