@@ -6,7 +6,7 @@ def test_go_to_the_news_is_possible():
     main_page.open()
 
     # WHEN
-    main_page.go_to_careers_section()
+    main_page.go_to_careers()
 
     # THEN
     careers_page.go_to_the_careers_is_possible()

@@ -9,9 +9,18 @@ class MainPage:
     main_menu_studios = browser.element('//a[.="STUDIOS"]')
     main_menu_news = browser.element('//a[.="NEWS"]')
     main_menu_careers = browser.element('//a[.="CAREERS"]')
+    main_menu_contact = browser.element('//a[.="CONTACT"]')
     about_section = browser.element('#about')
     game_project_space_marine_2 = browser.element('//a[@href="https://www.focus-entmt.com/en/games/warhammer-40000-space-marine-2"]')
     studio_3d_realms = browser.element('//a[@href="https://3drealms.com/"]')
+    type_of_inquiry_dropdown = browser.element('#form-field-field_637c06a')
+    type_of_inquiry_option = browser.element('//option[.="General"]')
+    subject_input = browser.element('#form-field-field_be9cbc2')
+    name_input = browser.element('#form-field-name')
+    email_input = browser.element('#form-field-email')
+    message_input = browser.element('#form-field-message')
+    submit_button = browser.element('//button[@type="submit"]')
+    success_message = browser.element('.elementor-message-success')
 
     def open(self):
         with allure.step('Открыть https://saber.games/'):
@@ -64,10 +73,34 @@ class MainPage:
             current_url = browser.driver.current_url
             assert current_url == 'https://3drealms.com/', f"Текущий url страницы: {current_url}"
 
-    def go_to_news_section(self):
+    def go_to_news(self):
         with allure.step('Нажать на "News"'):
             self.main_menu_news.should(be.clickable).click()
 
-    def go_to_careers_section(self):
+    def go_to_careers(self):
         with allure.step('Перейти в раздел "Careers"'):
             self.main_menu_careers.should(be.clickable).click()
+
+    def go_to_contacts_section(self):
+        with allure.step('Перейти к форме "Contact us"'):
+            self.main_menu_contact.should(be.clickable).click()
+
+    def fill_contact_us_form(self):
+        with allure.step('Указать тип обращения'):
+            self.type_of_inquiry_dropdown.click()
+            self.type_of_inquiry_option.click()
+
+        with allure.step('Указать тему обращения'):
+            self.subject_input.should(be.clickable).type('Test')
+        with allure.step('Указать имя'):
+            self.name_input.should(be.clickable).type('Tester')
+        with allure.step('Указать email'):
+            self.email_input.should(be.clickable).type('tester@example.com')
+        with allure.step('Написать сообщение'):
+            self.message_input.should(be.clickable).type('Test message')
+        with allure.step('Нажать на кнопку "Send"'):
+            self.submit_button.should(be.clickable).click()
+
+    def to_send_contacts_is_possible(self):
+        with allure.step('Проверить, что текст "Your submission was successful." - отображается'):
+            self.success_message.with_(timeout=5).should(have.text('Your submission was successful.'))
