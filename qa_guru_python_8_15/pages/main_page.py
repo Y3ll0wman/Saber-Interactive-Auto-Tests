@@ -47,7 +47,7 @@ class MainPage:
 
     def go_to_the_game_project_is_possible(self):
         with allure.step('Проверить, что в title указано "Space Marine 2 - Focus Entertainment"'):
-            browser.switch_to_tab(1)
+            browser.with_(timeout=3).switch_to_tab(1)
             title = str(browser.driver.title)
             assert title == 'Space Marine 2 - Focus Entertainment', f'Заголовок страницы: {title}'
         with allure.step('Проверить, что URL страницы: '
@@ -65,7 +65,7 @@ class MainPage:
 
     def go_to_the_studio_is_possible(self):
         with allure.step('Проверить, что в title указано "Home - 3DRealms"'):
-            browser.switch_to_tab(1)
+            browser.with_(timeout=3).switch_to_tab(1)
             title = str(browser.driver.title)
             assert title == 'Home - 3DRealms', f'Заголовок страницы: {title}'
         with allure.step('Проверить, что URL страницы: '
