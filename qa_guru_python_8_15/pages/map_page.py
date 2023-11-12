@@ -4,7 +4,7 @@ from selene import browser, be, have, by
 
 
 class MapPage:
-    input_search = browser.element('[placeholder="Поиск в 2ГИС"]')
+    input_search = browser.element('input[placeholder="Поиск в 2ГИС"]')
 
     def open(self):
         with allure.step('Открыть карту Санкт-Петербурга'):
