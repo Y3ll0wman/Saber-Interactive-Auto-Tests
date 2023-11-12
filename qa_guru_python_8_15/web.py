@@ -1,7 +1,7 @@
-from .pages.map_page import MapPage
+from .pages.main_page import MainPage
 
 '''
 Этот файл нужен для удобного импорта страниц
 '''
 
-map_page = MapPage()
+main_page = MainPage()

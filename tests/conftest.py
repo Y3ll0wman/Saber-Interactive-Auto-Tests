@@ -40,17 +40,17 @@ def setup_browser(request):
     }
     options.capabilities.update(selenoid_capabilities)
 
-    login_selenoid = os.getenv('LOGIN_SELENOID')
-    password_selenoid = os.getenv('PASSWORD_SELENOID')
+    login = os.getenv('LOGIN')
+    password = os.getenv('PASSWORD')
     remote_browser_url = os.getenv('REMOTE_BROWSER_URL')
 
     driver = webdriver.Remote(
-        command_executor=f"https://{login_selenoid}:{password_selenoid}@{remote_browser_url}",
+        command_executor=f"https://{login}:{password}@{remote_browser_url}",
         options=options
     )
 
     browser.config.driver = driver
-    browser.config.base_url = "https://2gis.ru/spb"
+    browser.config.base_url = "https://saber.games/"
     browser.config.window_width = 1920
     browser.config.window_height = 1080
 
