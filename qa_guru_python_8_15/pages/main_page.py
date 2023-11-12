@@ -7,6 +7,7 @@ class MainPage:
     main_menu_about = browser.element('//a[.="ABOUT"]')
     main_menu_games = browser.element('//a[.="GAMES"]')
     main_menu_studios = browser.element('//a[.="STUDIOS"]')
+    main_menu_news = browser.element('//a[.="NEWS"]')
     about_section = browser.element('#about')
     game_project_space_marine_2 = browser.element('//a[@href="https://www.focus-entmt.com/en/games/warhammer-40000-space-marine-2"]')
     studio_3d_realms = browser.element('//a[@href="https://3drealms.com/"]')
@@ -61,3 +62,7 @@ class MainPage:
                          'https://3drealms.com/'):
             current_url = browser.driver.current_url
             assert current_url == 'https://3drealms.com/', f"Текущий url страницы: {current_url}"
+
+    def go_to_news_section(self):
+        with allure.step('Нажать на "News"'):
+            self.main_menu_news.should(be.clickable).click()
