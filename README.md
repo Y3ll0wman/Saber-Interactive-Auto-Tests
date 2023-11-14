@@ -72,3 +72,20 @@ COMMENT = 'some comment'
 
 ----
 
+### Allure отчет
+#### Общие результаты 
+![allure_report_overview](qa_guru_python_8_15/pictures/allure_report_overview.png)
+
+#### Результаты прохождения теста
+![allure_reports_behaviors](qa_guru_python_8_15/pictures/allure_reports_behaviors.png)
+
+#### Графики
+
+![allure_reports_graphs](qa_guru_python_8_15/pictures/alluere_reports_graphs_1.png)
+![allure_reports_graphs](qa_guru_python_8_15/pictures/alluere_reports_graphs_2.png)
+
+----
+
+### Mind map тест плана
+
+![allure_reports_graphs](qa_guru_python_8_15/pictures/test-case-mind-map.png)
