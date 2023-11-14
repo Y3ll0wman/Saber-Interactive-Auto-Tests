@@ -36,7 +36,7 @@
 
 #### Выполнить в cli:
 > [!NOTE]
-> Ключ выбора версии: `--browser-version` - не обязателен
+> Ключ выбора версии `--browser-version` не обязателен
 ```bash
 python -m venv .venv
 source .venv/bin/activate
