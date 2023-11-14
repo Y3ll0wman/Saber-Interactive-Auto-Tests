@@ -19,19 +19,25 @@
 
 ### Используемый стэк
 
-<p align="left">
-<img align="center" title="Python" src="qa_guru_python_8_15/pictures/icons/python-original.svg" height="40" width="40"/>
-<img align="center" title="Pytest" src="qa_guru_python_8_15/pictures/icons/pytest-original.svg" height="40" width="40"/>
-<img align="center" title="Jira" src="qa_guru_python_8_15/pictures/icons/jira-original.svg" height="40" width="40"/>
-<img align="center" title="Allure Report" src="qa_guru_python_8_15/pictures/icons/Allure_Report.png" height="40" width="40"/>
-<img align="center" title="Allure TestOps" src="qa_guru_python_8_15/pictures/icons/AllureTestOps.png" height="40" width="40"/>
-<img align="center" title="GitHub" src="qa_guru_python_8_15/pictures/icons/github-original.svg" height="40" width="40"/>
-<img align="center" title="Selenoid" src="qa_guru_python_8_15/pictures/icons/selenoid.png" height="40" width="40"/>
-<img align="center" title="Selenium" src="qa_guru_python_8_15/pictures/icons/selenium-original.svg" height="40" width="40"/>
-<img align="center" title="Selene" src="qa_guru_python_8_15/pictures/icons/selene.png" height="40" width="40"/>
-<img align="center" title="Pycharm" src="qa_guru_python_8_15/pictures/icons/pycharm.png" height="40" width="40"/>
-<img align="center" title="Telegram" src="qa_guru_python_8_15/pictures/icons/tg.png" height="40" width="40"/>
-</p>
+<table border="0">
+<tr>
+<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+</tr>
+<tr>
+<td><img align="center" title="Python" src="qa_guru_python_8_15/pictures/icons/python-original.svg" height="40" width="40"/></td>
+<td><img align="center" title="Pytest" src="qa_guru_python_8_15/pictures/icons/pytest-original.svg" height="40" width="40"/></td>
+<td><img align="center" title="Jira" src="qa_guru_python_8_15/pictures/icons/jira-original.svg" height="40" width="40"/></td>
+<td><img align="center" title="Allure Report" src="qa_guru_python_8_15/pictures/icons/Allure_Report.png" height="40" width="40"/></td>
+<td><img align="center" title="Allure TestOps" src="qa_guru_python_8_15/pictures/icons/AllureTestOps.png" height="40" width="40"/></td>
+<td><img align="center" title="GitHub" src="qa_guru_python_8_15/pictures/icons/github-original.svg" height="40" width="40"/></td>
+<td><img align="center" title="Selenoid" src="qa_guru_python_8_15/pictures/icons/selenoid.png" height="40" width="40"/></td>
+<td><img align="center" title="Selenium" src="qa_guru_python_8_15/pictures/icons/selenium-original.svg" height="40" width="40"/></td>
+<td><img align="center" title="Selene" src="qa_guru_python_8_15/pictures/icons/selene.png" height="40" width="40"/></td>
+<td><img align="center" title="Pycharm" src="qa_guru_python_8_15/pictures/icons/pycharm.png" height="40" width="40"/></td>
+<td><img align="center" title="Telegram" src="qa_guru_python_8_15/pictures/icons/tg.png" height="40" width="40"/></td>
+</tr>
+</table>
+
 
 ### Локальный запуск автотестов
 
@@ -40,7 +46,7 @@
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-pytest -s -v . --browser-version=100
+pytest . --browser-version=100
 ```
 
 #### Получение отчёта:
