@@ -109,6 +109,8 @@ COMMENT = 'some comment' # Комментарий
 ----
 
 ### Интеграция с Jira
+> <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-953">Ссылка на проект</a>
+
 ![jira_project](qa_guru_python_8_15/pictures/jira_project.png)
 
 ----
