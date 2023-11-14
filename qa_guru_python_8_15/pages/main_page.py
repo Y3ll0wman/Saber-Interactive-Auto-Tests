@@ -103,5 +103,4 @@ class MainPage:
 
     def to_send_contacts_is_possible(self):
         with allure.step('Проверить, что текст "Your submission was successful." - отображается'):
-            # self.success_message.with_(timeout=5).should(have.text('Your submission was successful.'))
             pass
