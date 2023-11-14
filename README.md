@@ -5,6 +5,16 @@
 
 ----
 
+### Особенности проекта
+
+* Оповещения о тестовых прогонах в Telegram
+* Отчеты с видео, скриншотом, логами браузера, DOM моделью страницы
+* Сборка проекта в Jenkins
+* Отчеты Allure Report
+* Интеграция с Allure TestOps
+* Автоматизация отчетности о тестовых прогонах в Jira
+* Запуск автотестов в Selenoid
+
 ### Список проверок, реализованных в автотестах
 
 - [x] Раздел 'About' отображается
@@ -13,11 +23,6 @@
 - [x] Перейти к новости возможно
 - [x] Перейти в раздел 'Careers' возможно
 - [x] Отправить контакты возможно
-
-[//]: # (### Тест-кейсы)
-
-[//]: # ()
-[//]: # (![main page screenshot]&#40;/qa_guru_python_8_15/pictures/test-case-mind-map.png&#41;)
 
 ----
 
@@ -83,6 +88,35 @@ COMMENT = 'some comment' # Комментарий
 
 ![allure_reports_graphs](qa_guru_python_8_15/pictures/alluere_reports_graphs_1.png)
 ![allure_reports_graphs](qa_guru_python_8_15/pictures/alluere_reports_graphs_2.png)
+
+----
+
+### Интеграция с Allure TestOps
+> <a target="_blank" href="https://allure.autotests.cloud/project/3782/dashboards">Ссылка на проект</a>
+
+#### Дашборд с общими показателями тестовых прогонов
+
+![allure_test_ops_dashboards](qa_guru_python_8_15/pictures/allure_testops_dashboards.png)
+
+#### История запусков тестовых наборов
+
+![allure_testops_launches](qa_guru_python_8_15/pictures/allure_testops_launches.png)
+
+#### Тест кейсы
+
+![allure_testops_suites](qa_guru_python_8_15/pictures/allure_testops_suites.png)
+
+----
+
+### Интеграция с Jira
+
+----
+
+### Оповещения в Telegram
+
+----
+
+### Видео прохождения автотеста
 
 ----
 
