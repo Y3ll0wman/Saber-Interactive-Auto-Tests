@@ -54,8 +54,8 @@ allure serve build/allure-results
 > Параметры сборки не обязательны
 ```python
 BROWSER_VERSION = 100 # Версия браузера
-ENVIRONMENT = ['STAGE', 'PREPROD', 'PROD']
-COMMENT = 'some comment'
+ENVIRONMENT = ['STAGE', 'PREPROD', 'PROD'] # Окружение
+COMMENT = 'some comment' # Комментарий
 ```
 #### Запуск автотестов в Jenkins
 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/Saber-Interactive-Auto-Tests/">проект</a>
