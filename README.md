@@ -121,7 +121,7 @@ COMMENT = 'some comment' # Комментарий
 ----
 
 ### Видео прохождения автотеста
-
+![autotest.gif](qa_guru_python_8_15/pictures/autotest.gif)
 ----
 
 ### Mind map тест плана
