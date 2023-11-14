@@ -19,8 +19,7 @@
 
 ### Используемый стэк
 
-
-<table style="text-align: center">
+<table style="border: none">
 <tr style="border: none">
 <td style="border: none">Allure Report</td>
 <td style="border: none">Python</td>
