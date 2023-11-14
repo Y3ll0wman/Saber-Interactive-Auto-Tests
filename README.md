@@ -98,7 +98,7 @@ COMMENT = 'some comment' # Комментарий
 
 ![allure_test_ops_dashboards](qa_guru_python_8_15/pictures/allure_testops_dashboards.png)
 
-#### История запусков тестовых наборов
+#### История запуска тестовых наборов
 
 ![allure_testops_launches](qa_guru_python_8_15/pictures/allure_testops_launches.png)
 
@@ -109,10 +109,12 @@ COMMENT = 'some comment' # Комментарий
 ----
 
 ### Интеграция с Jira
+![jira_project](qa_guru_python_8_15/pictures/jira_project.png)
 
 ----
 
 ### Оповещения в Telegram
+![telegram_allert](qa_guru_python_8_15/pictures/telegram_allert.png)
 
 ----
 
