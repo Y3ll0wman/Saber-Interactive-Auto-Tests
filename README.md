@@ -38,8 +38,8 @@ pytest . --browser-version=100
 allure serve build/allure-results
 ```
 
-### Запуск автотестов в Jenkins
-> <a target="_blank" href="https://jenkins.autotests.cloud/job/Saber-Interactive-Auto-Tests/">Ссылка на проект в Jenkins</a>
+### Проект в Jenkins
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/Saber-Interactive-Auto-Tests/">Ссылка</a>
 
 #### Параметры сборки
 > [!NOTE]
@@ -49,15 +49,15 @@ BROWSER_VERSION = 100 # Версия браузера
 ENVIRONMENT = ['STAGE', 'PREPROD', 'PROD']
 COMMENT = 'some comment'
 ```
-
-#### 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/Saber-Interactive-Auto-Tests/">проект</a>
+#### Запуск автотестов в Jenkins
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/Saber-Interactive-Auto-Tests/">проект</a>
 
 ![jenkins project main page](qa_guru_python_8_15/pictures/jenkins_project_main_page.png)
 
-#### 2. Нажать "Build with Parameters"
-#### 3. В поле "BROWSER_VERSION" ввести: 100
-#### 4. Из списка "ENVIRONMENT" выбрать: PROD
-#### 5. В поле "COMMENT" ввести комментарий
-#### 6. Нажать "Build"
+2. Нажать "Build with Parameters"
+3. В поле "BROWSER_VERSION" ввести: 100
+4. Из списка "ENVIRONMENT" выбрать: PROD
+5. В поле "COMMENT" ввести комментарий
+6. Нажать "Build"
 
 ![jenkins_build](qa_guru_python_8_15/pictures/jenkins_build.png)
