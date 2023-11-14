@@ -37,6 +37,16 @@ allure serve build/allure-results
 ```
 
 ### Запуск автотестов в Jenkins
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/Saber-Interactive-Auto-Tests/">Ссылка на проект в Jenkins</a>
+
+#### Параметры сборки
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
+```python
+BROWSER_VERSION = 100 # Версия браузера
+ENVIRONMENT = ['STAGE', 'PREPROD', 'PROD']
+COMMENT = 'some comment'
+```
 
 #### 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/Saber-Interactive-Auto-Tests/">проект</a>
 
