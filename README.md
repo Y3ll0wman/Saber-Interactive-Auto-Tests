@@ -24,6 +24,8 @@
 ### Локальный запуск автотестов
 
 #### Выполнить в cli:
+> [!NOTE]
+> Ключ выбора версии: `--browser-version` - не обязателен
 ```bash
 python -m venv .venv
 source .venv/bin/activate
@@ -40,8 +42,8 @@ allure serve build/allure-results
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/Saber-Interactive-Auto-Tests/">Ссылка на проект в Jenkins</a>
 
 #### Параметры сборки
-> [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
+> [!NOTE]
+> Параметры сборки не обязательны
 ```python
 BROWSER_VERSION = 100 # Версия браузера
 ENVIRONMENT = ['STAGE', 'PREPROD', 'PROD']
